@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Crypto Tracker</h1>
+            <p>Monitoramento do mercado de criptomoedas em tempo real</p>
+        </header>
+        
+        <div class="controls-container">
+            <input type="text" id="search-input" placeholder="Pesquisar criptomoeda...">
+            <div class="right-controls">
+                <span id="update-status" class="status-badge">Atualizado agora</span>
+                <select id="currency-select">
+                    <option value="usd">USD ($)</option>
+                    <option value="brl">BRL (R$)</option>
+                    <option value="eur">EUR (€)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Moeda</th>
+                        <th id="price-header">Preço (USD)</th>
+                        <th>Var. 24h</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
